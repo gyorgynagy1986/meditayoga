@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Arculati paletta: meleg bézs, homok, tölgy, zsálya (a moodboard alapján) */
+  --color-sand-50: #f8f5ef;
+  --color-sand-100: #f1ebe1;
+  --color-sand-200: #e6dccc;
+  --color-sand-300: #d3c3aa;
+  --color-sand-400: #c0a882;
+
+  --color-taupe-400: #a49a8a;
+  --color-taupe-500: #857a69;
+  --color-taupe-600: #6a6154;
+
+  /* "mint" tokenek – zsályazöld értékekkel */
+  --color-mint-100: #eaece2;
+  --color-mint-200: #d9ddc9;
+  --color-mint-300: #c2c9ab;
+  --color-mint-500: #a3ad8b;
+  --color-mint-700: #79815f;
+  --color-mint-800: #5e644a;
+
+  --color-ink-700: #4f4a40;
+  --color-ink-800: #3b372f;
+  --color-ink-900: #292620;
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-display), ui-serif, Georgia, serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-sand-50);
+  color: var(--color-ink-800);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: var(--color-mint-300);
+  color: var(--color-ink-900);
+}
+
+/* Slider: scrollbar elrejtése */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
