@@ -8,6 +8,14 @@ export const site = {
   address: "Cím hamarosan",
   // Ide kerül majd a foglalási rendszer linkje (pl. MotiBro / Salonic)
   bookingUrl: "/foglalas",
+  // Timeify óralista widget (beágyazott órarend + foglalás a /foglalas oldalon).
+  // TODO élesítéskor: origin → éles Timeify domain, slug → a tenant slugja
+  // (a Timeify admin Integráció fülén találod a kész értékeket).
+  booking: {
+    origin: "https://www.timeify.hu",
+    slug: "medita",
+    days: 28,
+  },
 };
 
 export type Instructor = {
