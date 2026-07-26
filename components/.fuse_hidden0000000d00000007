@@ -103,7 +103,7 @@ export default function BookingWidget({
     setModalOpen(false);
     // A sorban álló kattintás elévült: enélkül egy késve érkező "ready" újra
     // megnyitná a modált az iframe-en belül, miközben mi zártnak hisszük.
-    openedClassId.current = null;
+    queuedClassId.current = null;
     modalRef.current?.contentWindow?.postMessage(
       { type: "timeify:modal:close", slug },
       target,
@@ -149,10 +149,12 @@ export default function BookingWidget({
       // fromModal
       if (d.type === "timeify:modal:ready") {
         modalReady.current = true;
-        // Nyitott modálnál MINDIG újraküldjük — akkor is, ha közben újratöltött.
-        if (openedClassId.current !== null) sendOpen(openedClassId.current);
+        if (queuedClassId.current !== null) {
+          sendOpen(queuedClassId.current);
+          queuedClassId.current = null;
+        }
       } else if (d.type === "timeify:modal:close") {
-        closeModal();
+        setModalOpen(false);
       } else if (d.type === "timeify:modal:booked") {
         // A modál nyitva marad (a visszaigazolást el kell olvasni), de a lista
         // mögötte frissüljön: változott a szabad helyek száma. A modál adata is
@@ -170,7 +172,7 @@ export default function BookingWidget({
 
     window.addEventListener("message", onMessage);
     return () => window.removeEventListener("message", onMessage);
-  }, [target, slug, sendOpen, closeModal]);
+  }, [target, slug, sendOpen]);
 
   // Görgetés-zár + görgetősáv-kompenzáció: az overflow:hidden eltünteti a
   // scrollbart, amitől a viewport ~15px-szel szélesebb lesz és az egész oldal
@@ -188,7 +190,6 @@ export default function BookingWidget({
     document.body.style.overflow = "hidden";
 
     // Fókusz az iframe-be, különben a TAB a takart tartalmon megy végig.
-    const lastFocus = document.activeElement as HTMLElement | null;
     modalRef.current?.focus();
 
     // Biztonsági kilépő: ha a modál soha nem jelentkezik be (CSP blokkolja a
@@ -213,7 +214,6 @@ export default function BookingWidget({
       document.body.style.overflow = prevOverflow;
       document.body.style.paddingRight = prevPadding;
       window.removeEventListener("keydown", onKey);
-      lastFocus?.focus?.();
     };
   }, [modalOpen, closeModal]);
 
@@ -237,7 +237,13 @@ export default function BookingWidget({
             loading="lazy"
             scrolling={scrollFallback ? "auto" : "no"}
             className="relative block w-full border-0"
-            style={{ height, minHeight: 320, background: "transparent" }}
+            style={{
+              height,
+              minHeight: 320,
+              background: "transparent",
+              overflow: "hidden",
+            }}
+            allowTransparency
           />
 
           {/* 2. modál — előre betöltve, rejtve; kattintásra azonnal megjelenik.
@@ -263,6 +269,7 @@ export default function BookingWidget({
                 zIndex: 2147483000,
                 background: "transparent",
               }}
+              allowTransparency
             />,
             document.body,
           )}

@@ -213,7 +213,6 @@ export default function BookingWidget({
       document.body.style.overflow = prevOverflow;
       document.body.style.paddingRight = prevPadding;
       window.removeEventListener("keydown", onKey);
-      lastFocus?.focus?.();
     };
   }, [modalOpen, closeModal]);
 
@@ -238,6 +237,7 @@ export default function BookingWidget({
             scrolling={scrollFallback ? "auto" : "no"}
             className="relative block w-full border-0"
             style={{ height, minHeight: 320, background: "transparent" }}
+            allowTransparency
           />
 
           {/* 2. modál — előre betöltve, rejtve; kattintásra azonnal megjelenik.
@@ -263,6 +263,7 @@ export default function BookingWidget({
                 zIndex: 2147483000,
                 background: "transparent",
               }}
+              allowTransparency
             />,
             document.body,
           )}

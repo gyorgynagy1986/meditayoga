@@ -8,6 +8,23 @@ export const site = {
   address: "6640 Csongrád, Fő utca 6–10., 1. emelet 42. ajtó",
   // Ide kerül majd a foglalási rendszer linkje (pl. MotiBro / Salonic)
   bookingUrl: "/foglalas",
+
+  /**
+   * Timeify foglalási widget (a /foglalas oldal ezt olvassa).
+   *
+   *   origin — a Timeify app címe. Lokálisan a Timeify dev szerver (3000-es port),
+   *            élesben a saját domain. NEM ennek az oldalnak a címe!
+   *   slug   — a stúdió azonosítója; a Timeify Studio → Integráció oldalon látszik.
+   *   days   — hány napra előre kérje le az órarendet.
+   *
+   * Mindkettő felülírható környezeti változóval, hogy ne kelljen kódot írni
+   * a lokál ↔ éles váltáshoz (lásd .env.local).
+   */
+  booking: {
+    origin: process.env.NEXT_PUBLIC_TIMEIFY_ORIGIN ?? "http://localhost:3000",
+    slug: process.env.NEXT_PUBLIC_TIMEIFY_SLUG ?? "zen-yoga",
+    days: 28,
+  },
 };
 
 export type Instructor = {

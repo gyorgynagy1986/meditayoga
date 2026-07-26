@@ -188,7 +188,6 @@ export default function BookingWidget({
     document.body.style.overflow = "hidden";
 
     // Fókusz az iframe-be, különben a TAB a takart tartalmon megy végig.
-    const lastFocus = document.activeElement as HTMLElement | null;
     modalRef.current?.focus();
 
     // Biztonsági kilépő: ha a modál soha nem jelentkezik be (CSP blokkolja a
@@ -213,7 +212,6 @@ export default function BookingWidget({
       document.body.style.overflow = prevOverflow;
       document.body.style.paddingRight = prevPadding;
       window.removeEventListener("keydown", onKey);
-      lastFocus?.focus?.();
     };
   }, [modalOpen, closeModal]);
 
@@ -237,7 +235,13 @@ export default function BookingWidget({
             loading="lazy"
             scrolling={scrollFallback ? "auto" : "no"}
             className="relative block w-full border-0"
-            style={{ height, minHeight: 320, background: "transparent" }}
+            style={{
+              height,
+              minHeight: 320,
+              background: "transparent",
+              overflow: "hidden",
+            }}
+            allowTransparency
           />
 
           {/* 2. modál — előre betöltve, rejtve; kattintásra azonnal megjelenik.
@@ -263,6 +267,7 @@ export default function BookingWidget({
                 zIndex: 2147483000,
                 background: "transparent",
               }}
+              allowTransparency
             />,
             document.body,
           )}
