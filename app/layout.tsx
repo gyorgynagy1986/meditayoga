@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | MEDITA Jóga",
   },
   description:
-    "MEDITA Jóga – letisztult, modern jógastúdió. Hatha, yin és női jóga, pilates, meditáció és mozgásórák mindenkinek. Nyitás: 2026 júliusában.",
+    "MEDITA Jóga – letisztult, modern jógastúdió Csongrádon. Hatha, yin és női jóga, pilates, meditáció és mozgásórák mindenkinek. Nyitás: 2026 augusztusában.",
 };
 
 export default function RootLayout({

@@ -19,9 +19,9 @@ export default function Home() {
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover brightness-[1.12]"
         />
-        <div className="absolute inset-0 bg-ink-900/45" />
+        <div className="absolute inset-0 bg-ink-900/30" />
         <div className="relative z-10 mx-auto max-w-3xl px-4 text-center text-sand-50">
           <BrandIcon className="mx-auto h-16 w-auto text-sand-50" />
           <h1 className="mt-8 font-serif text-5xl tracking-[0.25em] sm:text-7xl">

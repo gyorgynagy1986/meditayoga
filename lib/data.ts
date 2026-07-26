@@ -1,21 +1,13 @@
 export const site = {
   name: "MEDITA Jóga",
   tagline: "Jóga mindenkié – találd meg benne a saját utad",
-  openingDate: "2026. július",
-  openingNote: "Nyitás: 2026 júliusában",
-  email: "hello@meditayoga.hu",
-  phone: "+36 30 123 4567",
-  address: "Cím hamarosan",
+  openingDate: "2026. augusztus",
+  openingNote: "Nyitás: 2026 augusztusában",
+  email: "info@meditajoga.hu",
+  phone: "+36 30 647 9502",
+  address: "6640 Csongrád, Fő utca 6–10., 1. emelet 42. ajtó",
   // Ide kerül majd a foglalási rendszer linkje (pl. MotiBro / Salonic)
   bookingUrl: "/foglalas",
-  // Timeify óralista widget (beágyazott órarend + foglalás a /foglalas oldalon).
-  // TODO élesítéskor: origin → éles Timeify domain, slug → a tenant slugja
-  // (a Timeify admin Integráció fülén találod a kész értékeket).
-  booking: {
-    origin: "https://www.timeify.hu",
-    slug: "medita",
-    days: 28,
-  },
 };
 
 export type Instructor = {
@@ -29,6 +21,8 @@ export type Instructor = {
   story: string[];
 };
 
+/* ABC-sorrendben. Gerda (jógakerék, üdvözletek, gerincjóga) babát vár,
+   egyelőre nem tart órákat – ha visszatér, vegyük fel újra. */
 export const instructors: Instructor[] = [
   {
     slug: "edit",
@@ -44,47 +38,13 @@ export const instructors: Instructor[] = [
     ],
   },
   {
-    slug: "gerda",
-    name: "Gerda",
-    role: "jógaoktató",
-    classes: ["Jógakerék", "Üdvözletek", "Gerincjóga"],
-    bio: "A jógakerék és a gerincjóga szerelmese. Óráin a gerinc egészsége és az áramló mozgás kerül középpontba.",
-    story: [
-      "Gerda óráin a gerinc egészsége és az áramló, tudatos mozgás kerül középpontba. A jógakerék segítségével a hátrahajlítások és a mellkasnyitás biztonságosan, fokozatosan válnak elérhetővé.",
-      "Az üdvözlet-alapú órák dinamikus, mégis meditatív gyakorlást kínálnak, amely erősít, nyújt és lecsendesíti az elmét.",
-      "A részletes bemutatkozó szöveg hamarosan érkezik.",
-    ],
-  },
-  {
-    slug: "niki",
-    name: "Niki",
+    slug: "ildiko",
+    name: "Ildikó",
     role: "mozgásoktató",
-    classes: ["MOVE / mobilizáció"],
-    bio: "Mobilizációs óráin az ízületek egészséges mozgástartományának visszanyerése és a testtudatos mozgás a cél.",
+    classes: ["Saját testsúlyos, eszközös erősítő torna"],
+    bio: "Erősítő óráin saját testsúlyos és eszközös gyakorlatokkal építheted a stabil, erős testet.",
     story: [
-      "Niki MOVE óráin az ízületek egészséges mozgástartományának visszanyerése és a testtudatos, kontrollált mozgás a cél – kortól és edzettségtől függetlenül.",
-      "A részletes bemutatkozó szöveg hamarosan érkezik.",
-    ],
-  },
-  {
-    slug: "lilla",
-    name: "Lilla",
-    role: "pilates oktató",
-    classes: ["Talaj pilates"],
-    bio: "Talaj pilates óráin a mélyizmok erősítése, a testtartás javítása és a kontrollált mozgás áll a fókuszban.",
-    story: [
-      "Lilla talaj pilates óráin a mélyizmok erősítése, a testtartás javítása és a precíz, kontrollált mozgás áll a fókuszban.",
-      "A részletes bemutatkozó szöveg hamarosan érkezik.",
-    ],
-  },
-  {
-    slug: "vanda",
-    name: "Vanda",
-    role: "jógaoktató",
-    classes: ["Hatha jóga"],
-    bio: "Hatha jóga óráin a klasszikus ászanagyakorlás, a légzés és a relaxáció harmóniája vár.",
-    story: [
-      "Vanda hatha jóga óráin a klasszikus ászanagyakorlás, a tudatos légzés és a relaxáció harmóniája vár – minden szintre.",
+      "Ildikó erősítő óráin saját testsúlyos és eszközös gyakorlatokkal építheted a stabil, erős, egészséges testet.",
       "A részletes bemutatkozó szöveg hamarosan érkezik.",
     ],
   },
@@ -100,47 +60,68 @@ export const instructors: Instructor[] = [
     ],
   },
   {
-    slug: "ildiko",
-    name: "Ildikó",
-    role: "mozgásoktató",
-    classes: ["Saját testsúlyos, eszközös erősítő torna"],
-    bio: "Erősítő óráin saját testsúlyos és eszközös gyakorlatokkal építheted a stabil, erős testet.",
+    slug: "lilla",
+    name: "Lilla",
+    role: "pilates oktató",
+    classes: ["Talaj pilates"],
+    bio: "Talaj pilates óráin a mélyizmok erősítése, a testtartás javítása és a kontrollált mozgás áll a fókuszban.",
     story: [
-      "Ildikó erősítő óráin saját testsúlyos és eszközös gyakorlatokkal építheted a stabil, erős, egészséges testet.",
+      "Lilla talaj pilates óráin a mélyizmok erősítése, a testtartás javítása és a precíz, kontrollált mozgás áll a fókuszban.",
+      "A részletes bemutatkozó szöveg hamarosan érkezik.",
+    ],
+  },
+  {
+    slug: "niki",
+    name: "Niki",
+    role: "mozgásoktató",
+    classes: ["MOVE / mobilizáció"],
+    bio: "Mobilizációs óráin az ízületek egészséges mozgástartományának visszanyerése és a testtudatos mozgás a cél.",
+    story: [
+      "Niki MOVE óráin az ízületek egészséges mozgástartományának visszanyerése és a testtudatos, kontrollált mozgás a cél – kortól és edzettségtől függetlenül.",
+      "A részletes bemutatkozó szöveg hamarosan érkezik.",
+    ],
+  },
+  {
+    slug: "vanda",
+    name: "Vanda",
+    role: "jógaoktató",
+    classes: ["Hatha jóga"],
+    bio: "Hatha jóga óráin a klasszikus ászanagyakorlás, a légzés és a relaxáció harmóniája vár.",
+    story: [
+      "Vanda hatha jóga óráin a klasszikus ászanagyakorlás, a tudatos légzés és a relaxáció harmóniája vár – minden szintre.",
       "A részletes bemutatkozó szöveg hamarosan érkezik.",
     ],
   },
 ];
 
+/* Az óratípusok pontosítása folyamatban – az egyeztetett órarend
+   alapján frissítendő. */
 export const classTypes = [
   { name: "Stresszoldó jóga", desc: "Lassú, nyugtató gyakorlás a mindennapi feszültség oldására." },
   { name: "Yin jóga / Női jóga", desc: "Hosszan kitartott pózok, mély ellazulás, a női test ciklusaira hangolva." },
   { name: "Hatha jóga", desc: "Klasszikus ászanák, légzésfigyelés és relaxáció – minden szintre." },
-  { name: "Gerincjóga", desc: "A gerinc egészségét támogató, átmozgató gyakorlás." },
   { name: "Reformer pilates", desc: "Gépi pilates a mélyizmok precíz erősítésére." },
   { name: "Talaj pilates", desc: "Matracos pilates a stabil törzsért és a szép testtartásért." },
-  { name: "Jógakerék", desc: "Hátrahajlítások és mellkasnyitás biztonságosan, jógakerékkel." },
   { name: "Női meditáció", desc: "Befelé figyelés, elcsendesedés, női kör – vezetett meditációval." },
   { name: "MOVE / mobilizáció", desc: "Ízületi mobilizáció és testtudatos mozgás." },
   { name: "Erősítő és zenés órák", desc: "Aerobic, saját testsúlyos és eszközös erősítő torna." },
 ];
 
-/* A stúdió terei – a képek látványtervek, a kész stúdió
-   fotóira cserélendők a nyitás után. */
+/* A stúdió terei. A képek a kész stúdió fotóira cserélendők. */
 export const studioSpaces = [
   {
-    name: "Jógaterem",
-    desc: "Tágas, világos tér zsályazöld matracokkal, len párnákkal és rejtett polcvilágítással – a csoportos órák otthona.",
+    name: "LÓTUSZ · Nagy terem",
+    desc: "60 m²-es tágas, világos tér 20 fő befogadására. Zsályazöld és bézs prémium jógamatracokkal, len párnákkal, jóga- és pilates eszközökkel, tükrökkel.",
     image: "/studio/jogaterem.jpg",
   },
   {
-    name: "Reformer terem",
-    desc: "Természetes fa reformer gépek, ívelt tükrök meleg fénnyel – precíz, egyénre szabott pilates gyakorláshoz.",
+    name: "BLOOM · Kis terem",
+    desc: "15 m²-es hangulatos reformer terem 2 db ALIGN géppel és kiegészítőkkel, tükrökkel – a precíz, egyénre szabott reformer pilates gyakorláshoz.",
     image: "/studio/reformer.jpg",
   },
   {
-    name: "Recepció és közösségi tér",
-    desc: "Bordázott tölgy pult, kerámia, gyertyafény – érkezz meg, lassulj le, igyál egy teát óra előtt vagy után.",
+    name: "Recepció",
+    desc: "Érkezz meg és lassulj le, egy tea vagy limonádé mellett.",
     image: "/studio/recepcio.jpg",
   },
 ];
@@ -149,4 +130,19 @@ export const studioValues = [
   { name: "Nyugalom", desc: "Meleg bézs falak, tompított fények, illatok és csend – minden részlet a lelassulást szolgálja." },
   { name: "Egyensúly", desc: "Természetes anyagok: tölgy, len, kerámia. Letisztult terek, amelyekben a gyakorlásé a főszerep." },
   { name: "Energia", desc: "A mozgás öröme – a dinamikus óráktól a mély ellazulásig minden megfér egy fedél alatt." },
+];
+
+/* Stúdió házirend – a /hazirend oldalon jelenik meg. */
+export const houseRules = [
+  "Érkezz az óra kezdete előtt legalább 10 perccel, hogy kényelmesen át tudj öltözni és le tudj lassulni.",
+  "A stúdió az 1. emeleten található, amelyet a lépcsőházból a nyitott folyosón keresztül érsz el.",
+  "A stúdió tereiben kinti cipő használata tilos – kérjük, az előtérben vedd le a cipőt.",
+  "A jógaórákat mindig időben kezdjük, ezért késés esetén nem tudjuk garantálni a részvételt: a gyakorlás megkezdése után a csatlakozás megzavarná az időben érkezőket. Az óra elejei ráhangolódást követően azonban csendben még lehet csatlakozni.",
+  "A stúdióban fontos a csend: kérünk, az órákat ne zavard meg az előtérben hangos beszélgetéssel vagy zajkeltéssel, és halkítsd le a mobilodat.",
+  "A stúdió minden eszközt biztosít a gyakorláshoz (jógamatrac, tégla, heveder, pléd), de ha számodra kényelmesebb, hozhatod a saját matracodat is.",
+  "Az óra után a használt stúdiómatrac letakarítása a résztvevő feladata. A matracot tisztítás után szorosan feltekerve tedd vissza a helyére, a többi eszközzel együtt.",
+  "Zárható szekrényeket biztosítunk az értékeid megőrzéséhez – a kulcs mindig a nyitott szekrény zárjában marad. Ha véletlenül nálad maradna egy kulcs, haladéktalanul jelezd az oktatódnak.",
+  "Ha betegnek érzed magad, köhögsz vagy folyik az orrod, ne gyere órára, amíg meg nem gyógyulsz.",
+  "Lehetőleg ne teli hassal érkezz – nehezebb ételt az óra előtt már ne fogyassz.",
+  "A szolgáltató a résztvevőkről – kizárólag azok hozzájárulása esetén – fénykép- és mozgóképfelvételt készíthet, amelyet a későbbiekben marketing célra használhat fel.",
 ];

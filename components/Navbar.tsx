@@ -11,6 +11,7 @@ const links = [
   { href: "/rolunk", label: "Rólunk" },
   { href: "/studio", label: "Stúdió" },
   { href: "/oktatok", label: "Oktatók" },
+  { href: "/hazirend", label: "Házirend" },
   { href: "/kapcsolat", label: "Kapcsolat" },
 ];
 

@@ -25,6 +25,7 @@ export default function Footer() {
             <li><Link href="/studio" className="hover:text-mint-300">Stúdió</Link></li>
             <li><Link href="/oktatok" className="hover:text-mint-300">Oktatók</Link></li>
             <li><Link href="/kapcsolat" className="hover:text-mint-300">Kapcsolat</Link></li>
+            <li><Link href="/hazirend" className="hover:text-mint-300">Házirend</Link></li>
             <li><Link href={site.bookingUrl} className="hover:text-mint-300">Foglalás</Link></li>
           </ul>
         </div>
