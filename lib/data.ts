@@ -1,5 +1,6 @@
 export const site = {
   name: "MEDITA Jóga",
+  url: "https://www.meditajoga.hu",
   tagline: "Jóga mindenkié – találd meg benne a saját utad",
   openingDate: "2026. augusztus",
   openingNote: "Nyitás: 2026 augusztusában",
