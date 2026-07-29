@@ -24,12 +24,17 @@ export default function ClassesAccordion() {
               >
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <span
-                className={`flex-1 font-serif text-2xl transition-colors sm:text-3xl ${
-                  isOpen ? "text-ink-900" : "text-taupe-500 group-hover:text-ink-800"
-                }`}
-              >
-                {c.name}
+              <span className="flex-1">
+                <span
+                  className={`block font-serif text-2xl transition-colors sm:text-3xl ${
+                    isOpen ? "text-ink-900" : "text-taupe-500 group-hover:text-ink-800"
+                  }`}
+                >
+                  {c.name}
+                </span>
+                <span className="mt-1 block text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-taupe-400">
+                  {c.instructor} órája
+                </span>
               </span>
               {/* plusz ikon, nyitáskor X-be fordul */}
               <span
@@ -47,9 +52,21 @@ export default function ClassesAccordion() {
               }`}
             >
               <div className="overflow-hidden">
-                <p className="max-w-2xl pb-6 pl-14 pr-4 leading-7 text-ink-700">
-                  {c.desc}
-                </p>
+                <div className="max-w-2xl pb-6 pl-14 pr-4">
+                  <p className="leading-7 text-ink-700">{c.desc}</p>
+                  {c.variants && (
+                    <ul className="mt-4 flex flex-wrap gap-2">
+                      {c.variants.map((v) => (
+                        <li
+                          key={v.name}
+                          className="rounded-full bg-mint-100 px-3.5 py-1.5 text-xs font-medium text-mint-800"
+                        >
+                          {v.name}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
             </div>
           </div>

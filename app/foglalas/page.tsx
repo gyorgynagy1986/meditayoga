@@ -7,7 +7,7 @@ import { site } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Foglalás",
   description:
-    "Órarend és online foglalás a mEDITa YOGA stúdióban – válassz órát, és foglalj pár kattintással.",
+    "Órarend és online foglalás a MEDITA Jóga stúdióban – válassz órát, és foglalj pár kattintással.",
 };
 
 // Amíg a Timeify tenant slug nincs beállítva a lib/data.ts-ben, a régi

@@ -23,6 +23,8 @@ export default function Footer() {
             <li><Link href="/" className="hover:text-mint-300">Főoldal</Link></li>
             <li><Link href="/rolunk" className="hover:text-mint-300">Rólunk</Link></li>
             <li><Link href="/studio" className="hover:text-mint-300">Stúdió</Link></li>
+            <li><Link href="/oratipusok" className="hover:text-mint-300">Óratípusok</Link></li>
+            <li><Link href="/arak" className="hover:text-mint-300">Áraink</Link></li>
             <li><Link href="/oktatok" className="hover:text-mint-300">Oktatók</Link></li>
             <li><Link href="/kapcsolat" className="hover:text-mint-300">Kapcsolat</Link></li>
             <li><Link href="/hazirend" className="hover:text-mint-300">Házirend</Link></li>
@@ -61,7 +63,17 @@ export default function Footer() {
       <div className="border-t border-sand-50/10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-sand-300/60 sm:flex-row sm:px-6">
           <p>© {new Date().getFullYear()} {site.name}. Minden jog fenntartva.</p>
-          <p>Jóga mindenkié.</p>
+          <p>
+            Fejlesztés és design:{" "}
+            <a
+              href="https://studiobromo.hu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-mint-300"
+            >
+              studiobromo.hu
+            </a>
+          </p>
         </div>
       </div>
     </footer>

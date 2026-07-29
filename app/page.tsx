@@ -5,7 +5,6 @@ import StudioShowcase from "@/components/StudioShowcase";
 import ClassesAccordion from "@/components/ClassesAccordion";
 import BookingBand from "@/components/BookingBand";
 import Reveal from "@/components/Reveal";
-import { BrandIcon } from "@/components/Logo";
 import { site } from "@/lib/data";
 
 export default function Home() {
@@ -23,15 +22,16 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-ink-900/30" />
         <div className="relative z-10 mx-auto max-w-3xl px-4 text-center text-sand-50">
-          <BrandIcon className="mx-auto h-16 w-auto text-sand-50" />
-          <h1 className="mt-8 font-serif text-5xl tracking-[0.25em] sm:text-7xl">
-            M<span className="text-mint-300">EDIT</span>A
-          </h1>
-          <p className="mt-4 flex items-center justify-center gap-3 text-sm font-semibold tracking-[0.45em] text-sand-300">
-            <span className="h-px w-8 bg-current" />
-            JÓGA
-            <span className="h-px w-8 bg-current" />
-          </p>
+          <h1 className="sr-only">MEDITA Jóga</h1>
+          <Image
+            src="/logo/logo-portrait-white.png"
+            alt=""
+            aria-hidden
+            width={636}
+            height={810}
+            priority
+            className="mx-auto h-56 w-auto drop-shadow-sm sm:h-72"
+          />
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-sand-100/90">
             {site.tagline}. Letisztult, modern tér – személyes figyelemmel,
             minden szintre.
@@ -109,6 +109,14 @@ export default function Home() {
           <Reveal delay={150}>
             <div className="mt-12">
               <ClassesAccordion />
+            </div>
+            <div className="mt-8 text-right">
+              <Link
+                href="/oratipusok"
+                className="text-xs font-semibold uppercase tracking-[0.2em] text-mint-700 hover:text-mint-800"
+              >
+                Összes óratípus részletesen →
+              </Link>
             </div>
           </Reveal>
         </div>
