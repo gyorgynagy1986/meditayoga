@@ -51,7 +51,7 @@ export const instructors: Instructor[] = [
       "Bozóné Simon Edit vagyok, 46 éves. A mozgás és a sport mindig is része volt az életemnek. Bár sosem versenyszerűen vagy kiemelkedő szinten sportoltam, mégis folyamatosan jelen volt a mindennapjaimban. Kipróbáltam több mozgásformát is, mint a tánc, a futás, az aerobic és a tenisz, melyek mind hozzájárultak ahhoz, hogy a testmozgás természetes igénnyé váljon számomra.",
       "A jógával körülbelül 10 évvel ezelőtt találkoztam először. Kezdetben nem gondoltam, hogy ez az én utam lesz, mivel meglehetősen kötött és merev izomzattal rendelkezem. Ennek ellenére azonnal magával ragadott az ászanák szépsége, a gyakorlók testtudatossága, valamint a légzésfigyelés, a relaxáció és a meditáció nyugtató, befelé fordító világa.",
       "Az elmúlt évek során a jóga egyre fontosabb szerepet töltött be az életemben. Nemcsak a testemmel való kapcsolatom változott meg, hanem a belső egyensúly, a tudatosság és a jelenlét is egyre hangsúlyosabbá vált.",
-      "Ezek az élmények és tapasztalatok indították el bennem a gondolatot, hogy szeretnék létrehozni egy saját jógastúdiót. Egy olyan teret, ahol mások is megtapasztalhatják a jóga, a relaxáció és a meditáció jótékony hatásait, függetlenül attól, hogy milyen szinten állnak, vagy milyen kihívásokkal érkeznek. Hiszem, hogy a jóga mindenki számára elérhető, és mindenki megtalálhatja benne a saját útját – ahogyan én is megtaláltam a sajátomat.",
+      "Ezek az élmények és tapasztalatok indították el bennem a gondolatot, hogy szeretnék létrehozni egy saját jógastúdiót. Egy olyan teret, ahol mások is megtapasztalhatják a jóga, relaxáció, meditáció jótékony hatásait, függetlenül attól, hogy milyen szinten állnak, vagy milyen kihívásokkal érkeznek. Hiszem, hogy a jóga mindenki számára elérhető, és mindenki megtalálhatja benne a saját útját – ahogyan én is megtaláltam a sajátomat.",
     ],
   },
   {
@@ -61,9 +61,7 @@ export const instructors: Instructor[] = [
     classes: ["Funkcionális köredzés"],
     bio: "Fitness instruktor, funkcionális tréner, gerinctréner. Vallja: tanulni és a mozgást elkezdeni sosem késő!",
     story: [
-      "Kozma Ildikó vagyok, 42 éves. Mindig is életem része volt a sport, sokfélét kipróbáltam. 4 éve döntöttem úgy, hogy a sport iránti rajongásomat másoknak is átadnám.",
-      "Azóta fitness instruktor, funkcionális tréner, gerinctréner, fascia mobilizáció és stretching tréner is vagyok. Emellett táplálkozási tanácsadóként és menopauza coachként segítem a nőket.",
-      "Azt vallom, hogy tanulni és a mozgást elkezdeni sosem késő! A nőknek 40 felett van csak igazán szükségük a tudatos mozgásra.",
+      "Kozma Ildikó vagyok, 42 éves. Mindig is életem része volt a sport, sokfélét kipróbáltam. 4 éve döntöttem úgy, hogy szeretném ha a sport iránti rajongásom másoknak is átadhatnám. Azóta már fitness instruktor, funkcionális tréner, gerinctréner, fascia mobilizáció és stretching tréner is vagyok. Emellett táplálkozási tanácsadóként és menopauza coachként segítem a nőket. Azt vallom, hogy tanulni és a mozgást elkezdeni sosem késő! A nőknek 40 felett van csak igazán szüksége a tudatos mozgásra.",
     ],
   },
   {
@@ -73,9 +71,8 @@ export const instructors: Instructor[] = [
     classes: ["Fitball"],
     bio: "A mozgás, a zene és a tánc az éltető ereje. Vidám, dinamikus fitball óráin mindenkit szeretettel vár.",
     story: [
-      "„Senki sem fordulhat vissza, hogy mindent elölről kezdjen. De bárki nekifoghat egy teljesen új befejezést elkezdeni.” (Dan Zadra)",
-      "A mozgás, a zene, a tánc az éltető erőm. Olyan vagyok a sportban is, mint a zenében: mindenevő. Kisiskolásként kezdtem szertornázni, majd főiskolás koromban jött az aerobic, utána meg a többi…",
-      "Elmúltam 50, most sportedző képzésben tanulok, mert szeretek megújulni. A változatosság gyönyörködtet!",
+      "„Senki sem fordulhat vissza, hogy mindent elölről kezdjen. De bárki nekifoghat egy teljesen új befejezést elkezdeni.” Dan Zadra",
+      "A mozgás, a zene, a tánc az éltető erőm. Olyan vagyok a sportban is, mint a zenében: mindenevő. Kisiskolásként kezdtem szertornázni, majd fősulis koromban jött az aerobic, utána meg a többi... Elmúltam 50, most sportedző képzésben tanulok, mert szeretek megújulni. A változatosság gyönyörködtet!",
     ],
   },
   {
@@ -85,21 +82,17 @@ export const instructors: Instructor[] = [
     classes: ["Talaj pilates"],
     bio: "11 év balettmúlttal érkezett a pilateshez – óráin a testtudat, a tartás és a precizitás találkozik a könnyedséggel.",
     story: [
-      "Sziasztok, Gróf Lilla vagyok, pilates oktató. Gyermekkorom óta a mozgás központi szerepet tölt be az életemben: 11 év balettmúlttal a hátam mögött megtanultam, milyen fegyelmezett, mégis légies tud lenni a test, ha összhangba kerül a lélekkel.",
-      "A balett világából hozott testtudat, tartás és precizitás számomra természetes alapot jelentett, amikor rátaláltam a pilatesre.",
-      "Mindenkit szeretettel várok pilates óráimra, függetlenül attól, hogy most ismerkedik a mozgásformával, vagy már tapasztaltabb. Célom, hogy az órák egyszerre legyenek hatékonyak és jólesők: erősítsenek, fejlesszék a testtudatot, és segítsenek kiszakadni a mindennapokból.",
+      "Sziasztok, Gróf Lilla vagyok, pilates oktató. Gyermekkorom óta a mozgás központi szerepet tölt be az életemben, hiszen 11 év balettmúlttal a hátam mögött megtanultam, milyen fegyelmezett, mégis légies tud lenni a test, ha összhangba kerül a lélekkel. A balett világából hozott testtudat, tartás és precizitás számomra természetes alapot jelentett, amikor rátaláltam a pilatesre. Mindenkit szeretettel várok Pilates óráimra, függetlenül attól, hogy most ismerkedik a mozgásformával vagy már tapasztaltabb. Célom, hogy az órák egyszerre legyenek hatékonyak és jólesők: erősítsenek, fejlesszék a testtudatot, és segítsenek kiszakadni a mindennapokból.",
     ],
   },
   {
     slug: "niki",
     name: "Niki",
     role: "mozgásoktató",
-    classes: ["MOVE / mobilizáció"],
+    classes: ["Move"],
     bio: "Futóedzők Csongrádon a férjével – a keresztedzés híve, óráin a jóleső mozgás és az energia kerül előtérbe.",
     story: [
-      "Csongrádon a férjemmel évek óta tartunk futóedzéseket heti rendszerességgel, ahol a tudatos felkészülés és a sérülésmegelőzés fontos szerepet kap.",
-      "Hiszek a keresztedzés fontosságában, ezért is mélyítettem el a tudásomat ezen a területen – hogy ne csak hatékony, hanem kiegyensúlyozott és változatos is legyen egy-egy edzés.",
-      "Számomra a mozgás a feltöltődés és a szabadság élménye. A MOVE óráimon nem a teljesítmény, hanem a jóleső mozdulatok, a könnyedség és az energia kerülnek előtérbe.",
+      "Csongrádon a férjemmel évek óta tartunk futóedzéseket, heti rendszerességgel, ahol a tudatos felkészülés és a sérülésmegelőzés fontos szerepet kap. Hiszek a keresztedzés fontosságában, ezért is mélyítettem el a tudásomat ezen a területen – hogy ne csak hatékony, hanem kiegyensúlyozott, mindamellett változatos is legyen egy-egy edzés.",
     ],
   },
   {
@@ -109,9 +102,7 @@ export const instructors: Instructor[] = [
     classes: ["Stresszoldó jóga"],
     bio: "Jógaoktató és traumatudatos, szomatikus női coach. Óráin a test és a lélek is gyógyul – garantált a lelassulás.",
     story: [
-      "Szia, Vanda vagyok, jógaoktató és life coach immár 5-6 éve. Amióta az eszemet tudom, járom az önismereti utat – millió tanfolyam, önismereti kurzus, kezelés, terápia és sok-sok belső munka van mögöttem. Az útnak azonban sosincs vége: veletek fejlődöm!",
-      "Mindig azt hallottam másoktól, hogy a közelemben megnyugszanak, lecsendesednek attól a jelenléttől, amit nyújtani tudok – ezért tudtam, hogy ezzel dolgom van. Összeraktam mindent, amit tudok, tapasztaltam és tanultam, hogy segíthesselek nőként kiteljesedni, megtalálni a lelassulást, a belső békét és a stresszmentes életet.",
-      "Szeretettel várlak csoportos jógaóráimon, ahol a test és a lélek is gyógyul, és garantált, hogy lelassulsz, megnyugszol. Jöhetsz magánórára is, ha kezdő vagy, vagy ha egyedül gyakorolnál.",
+      "Szia, Vanda vagyok, jóga oktató és life coach mostmár 5-6 éve. Amióta csak az eszemet tudom járom az önismereti utat, millió tanfolyam, önismereti kurzus, kezelés, terápia és sok-sok belső munka van mögöttem. Az útnak azonban sosincs vége, Veletek fejlődőm! Mindig is azt hallottam másoktól, hogy a közelemben megnyugszanak, lecsendesednek attól a jelenléttől, amit én tudok nyújtani, ezért tudtam, hogy ezzel dolgom van. Ezért összeraktam mindent amit tudok, tapasztaltam, tanultam, hogy segíthesselek nőként kiteljesedni és megtalálni a lelassulást, belső békét, stresszmentes életet! Így aztán szeretettel várlak csoportos jóga óráimon, ahol a test és a lélek is gyógyul és garantált, hogy lelassulsz, megnyugszol. Jöhetsz magán órára is ha kezdő vagy, vagy ha egyedül lennél.",
     ],
   },
 ];
@@ -123,53 +114,54 @@ export type ClassType = {
   variants?: { name: string; desc: string }[];
 };
 
-/* Óratípusok – az oktatók saját leírásaival. */
+/* Óratípusok – az oktatók saját, szó szerinti leírásaival. */
 export const classTypes: ClassType[] = [
   {
     name: "Relax jóga",
     instructor: "Edit",
-    desc: "A női és yin jóga elemeit ötvöző, nyugodt, feltöltődést segítő gyakorlás, amelynek célja a test és az elme ellazítása. Finom nyújtások, légzőgyakorlatok és hosszabban kitartott, kényelmes pózok segítenek oldani a feszültséget, csökkenteni a stresszt és megteremteni a belső egyensúlyt. Minden korosztálynak és edzettségi szintnek ajánlott – kezdőknek is, hiszen nem a teljesítmény, hanem a pihenés, a tudatos jelenlét és a regenerálódás áll a középpontban.",
+    desc: "Relax jóga óráimon ötvözőm a női és yin jóga elemeit, mely által megtapasztalhatsz egy nyugodt, feltöltődést segítő gyakorlást, amelynek célja a test és az elme ellazítása. Az óra során finom nyújtások, légzőgyakorlatok és hosszabban kitartott, kényelmes pózok segítenek oldani a feszültséget, csökkenteni a stresszt és megteremteni a belső egyensúlyt. A relax jóga minden korosztály és edzettségi szint számára ajánlott, kezdőknek is, hiszen nem a teljesítmény, hanem a pihenés, a tudatos jelenlét és a regenerálódás áll a középpontban.",
   },
   {
     name: "Napindító jóga",
     instructor: "Edit",
-    desc: "Indítsd a napot tudatosan és energikusan! Finom átmozgató gyakorlatokkal, nyújtásokkal és légzőgyakorlatokkal ébresztjük fel a testet, miközben felkészítjük az elmét a nap kihívásaira. A gyakorlás frissességet, könnyedséget és kiegyensúlyozottságot ad, így feltöltődve vághatsz neki a napnak. Minden korosztály és gyakorlási szint számára ajánlott.",
+    desc: "Indítsd a napot tudatosan és energikusan! Ezen az órán finom átmozgató gyakorlatokkal, nyújtásokkal és légzőgyakorlatokkal ébresztjük fel a testet, miközben felkészítjük az elmét a nap kihívásaira. A gyakorlás frissességet, könnyedséget és kiegyensúlyozottságot ad, így feltöltődve vághatsz neki a napnak. Az óra minden korosztály és gyakorlási szint számára ajánlott.",
   },
   {
     name: "Reformer pilates",
     instructor: "Edit",
-    desc: "A reformer pilates órák különböző nehézségi szinteken érhetők el, így kezdők és haladók egyaránt megtalálják a számukra megfelelő kihívást. A vendégek igényeihez igazodva a későbbiekben tematikus órákat is kialakítunk, amelyek egy-egy területre – például törzserő, alsótest, mobilitás vagy teljes testes erősítés – helyezik a hangsúlyt.",
+    desc: "Reformer Pilates órákon belül számíthatsz:",
     variants: [
       { name: "Kezdő Reformer", desc: "Lassú tempójú, biztonságos óra, ahol az egész testet átmozgatjuk. A hangsúly a helyes kivitelezésen, a törzsizmok erősítésén és a mobilitás fejlesztésén van." },
       { name: "Reformer Flow Kezdő", desc: "Folyamatos, könnyed gyakorlatsorokkal fejlesztjük az erőt, az egyensúlyt és a koordinációt. Ideális azoknak, akik már ismerik az alapokat, de még kezdő szinten gyakorolnak." },
-      { name: "Reformer Core", desc: "A mély törzsizmok erősítésén, a stabilitás és a helyes testtartás fejlesztésén van a hangsúly. A has-, hát- és farizmokat hatékonyan dolgoztatjuk meg, miközben az egész test harmonikusan erősödik. Kiváló választás kezdőknek és újrakezdőknek is." },
-      { name: "Reformer Power", desc: "Dinamikus, intenzív óra azoknak, akik szeretnek kihívások elé állni. Erősítő gyakorlatokkal, nagyobb terheléssel és folyamatos mozgással fejlesztjük az erőt, az állóképességet és a stabilitást. Reformer tapasztalattal ajánlott." },
+      { name: "Reformer Core", desc: "A mély törzsizmok erősítésén, a stabilitás és a helyes testtartás fejlesztésén van a hangsúly. A reformer gép segítségével hatékonyan dolgoztatjuk meg a has-, hát- és farizmokat, miközben az egész test harmonikusan erősödik. Az óra javítja a testtudatot, az egyensúlyt és a mozgásminőséget, így kiváló választás kezdőknek és újrakezdőknek is." },
+      { name: "Reformer Power", desc: "Dinamikus, intenzív óra azoknak, akik szeretnek kihívások elé állni. Erősítő gyakorlatokkal, nagyobb terheléssel és folyamatos mozgással fejlesztjük az erőt, az állóképességet és a stabilitást. Ajánlott reformer tapasztalattal rendelkezőknek." },
+      { name: "Tematikus Reformer órák", desc: "A reformer Pilates órák különböző nehézségi szinteken érhetők el, így kezdők és haladók egyaránt megtalálhatják a számukra megfelelő kihívást. A vendégek igényeihez és edzettségi szintjéhez igazodva a későbbiekben tematikus órákat is kialakítunk, amelyek egy-egy területre – például törzserő, alsótest, mobilitás vagy teljes testes erősítés – helyezik a hangsúlyt." },
     ],
-  },
-  {
-    name: "Stresszoldó jóga",
-    instructor: "Vanda",
-    desc: "Az óra alapját a hatha és a női jóga elemei adják, nagyon lágy, könnyed formában. Idegrendszert szabályozó, a testhez visszakapcsoló, a jelenbe megérkező gyakorlatokkal találkozhatsz, miközben szépen át is mozgatjuk a testet. Gyere el, ha kiszakadnál a stresszes mindennapokból, sokat vagy feszült, nehezen lassulsz le, kapcsolódnál magaddal és a nőiességeddel – vagy ha szorongsz, esetleg pánikrohamaid szoktak lenni. A gyakorlás könnyen követhető, kezdőknek és haladóknak is ajánlott.",
-  },
-  {
-    name: "Talaj pilates",
-    instructor: "Lilla",
-    desc: "Hatékony és jóleső órák, amelyek erősítenek, fejlesztik a testtudatot, és segítenek kiszakadni a mindennapokból – függetlenül attól, hogy most ismerkedsz a mozgásformával, vagy már tapasztaltabb vagy.",
-  },
-  {
-    name: "MOVE / mobilizáció",
-    instructor: "Niki",
-    desc: "A MOVE órákon nem a teljesítmény, hanem a jóleső mozdulatok, a könnyedség és az energia kerülnek előtérbe. A mozgás nem fáraszt, hanem épp ellenkezőleg: életre kelt, és segít, hogy frissebben, lazábban zárd a napot.",
   },
   {
     name: "Fitball",
     instructor: "Kata",
-    desc: "Vidám, dinamikus óra, amelyen hasat, popsit feszesítő és az ülőmunkában elfáradt hát- és vállövi izmokat átmozgató gyakorlatokkal haladunk a flow felé. A fitball kímélő-gyógyító hatásának köszönhetően bátran bevállalhatják azok is, akik gerincbántalmakkal, csontritkulással, ízületi problémákkal vagy túlsúllyal küzdenek.",
+    desc: "A fitball órámon vidám, dinamikus óra keretében fogunk hasunkat, popsinkat feszesítő és az ülőmunkában elfáradt hátizmokat, vállövi izmokat átmozgató gyakorlatokkal haladni a flow felé. Bátran bevállalhatják azok is, akik gerincbántalmakkal, csontritkulással, ízületi problémákkal, túlsúllyal küzdenek köszönhetően a fitball kímélő-gyógyító hatásának. Mindenkit szeretettel várok!",
   },
   {
     name: "Funkcionális köredzés",
     instructor: "Ildikó",
-    desc: "Minden alkalommal olyan gyakorlatokat végzünk – állomásokra bontva –, amelyek támogatják a testünket abban, hogy a funkciójának megfelelően tudjuk használni. A cél az erős törzsizomzat és a stabil lábak, hogy minden gond nélkül le tudjuk venni az edényeket a felső polcról – akár 20 év múlva is. Az edzés alatti jókedv garantált!",
+    desc: "A funkcionális köredzésről röviden azt kell tudni, hogy minden edzés alkalmával olyan gyakorlatokat végzünk, amik támogatják testünket abban, hogy funkciójának megfelelő tudjuk használni, mindezt állomásokra bontva. Az edzés célja, hogy megerősítsük a törzs izomzatot, stabil lábakon álljunk és minden gond nélkül le tudjunk venni az edényeket a felső polcról, akár 20 év múlva is. Az edzés alatti jókedv pedig garantált :-)",
+  },
+  {
+    name: "Move",
+    instructor: "Niki",
+    desc: "Számomra a mozgás a feltöltődés és a szabadság élménye. A Move óráimon nem a teljesítmény, hanem a jóleső mozdulatok, a könnyedség és az energia kerülnek előtérbe. Hiszem, hogy a mozgás nem fáraszt, hanem épp ellenkezőleg – életre kelt, és segít, hogy frissebben, lazábban zárd a napot.",
+  },
+  {
+    name: "Talaj pilates",
+    instructor: "Lilla",
+    desc: "Mindenkit szeretettel várok Pilates óráimra, függetlenül attól, hogy most ismerkedik a mozgásformával vagy már tapasztaltabb. Célom, hogy az órák egyszerre legyenek hatékonyak és jólesők: erősítsenek, fejlesszék a testtudatot, és segítsenek kiszakadni a mindennapokból.",
+  },
+  {
+    name: "Stresszoldó jóga",
+    instructor: "Vanda",
+    desc: "A stresszoldó jóga óráim alapját a hatha és női jóga elemek adják, de egy nagyon lágy, könnyed formában kivitelezve. Amivel találkozhatsz a gyakorlás alatt, azok az idegrendszert szabályozó, testhez visszakapcsoló, jelenbe megérkezős gyakorlatok. Emellett pedig szépen át is mozgatjuk a testet. Érdemes eljönnöd erre az óra típusra ha kiszakadnál a stresszes mindennapokból, sokat vagy feszült, túl sokat rohansz és nehéz lelassulni, kapcsolódnál magaddal és/vagy a nőiességeddel, értékes én időt töltenél magaddal vagy akkor is, ha szorongsz, esetleg szoktak pánikrohamjaid lenni. A gyakorlás könnyen követhető és kivitelezhető, kezdőknek és haladóknak is ajánlott.",
   },
 ];
 
