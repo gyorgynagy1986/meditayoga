@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
     default: "MEDITA Jóga – Jógastúdió Csongrádon",
-    template: "%s | MEDITA Jóga",
+    template: "%s | MEDITA Jóga Csongrád",
   },
   description,
   alternates: {
