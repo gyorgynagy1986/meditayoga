@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import ArchPlaceholder from "./ArchPlaceholder";
+import InstructorPortrait from "./InstructorPortrait";
 import { instructors } from "@/lib/data";
 
 export default function InstructorSlider() {
@@ -30,7 +30,12 @@ export default function InstructorSlider() {
           >
             <article>
               <div className="transition-transform duration-500 group-hover:-translate-y-1.5">
-                <ArchPlaceholder initial={i.name.charAt(0)} className="aspect-[3/4] w-full" />
+                <InstructorPortrait
+                  name={i.name}
+                  photo={i.photo}
+                  className="aspect-[3/4] w-full"
+                  sizes="288px"
+                />
               </div>
               <div className="px-1 pt-5 text-center">
                 <h3 className="font-serif text-2xl text-ink-900 transition-colors group-hover:text-mint-700">

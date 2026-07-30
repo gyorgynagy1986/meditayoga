@@ -3,11 +3,11 @@ import Link from "next/link";
 import Reveal from "./Reveal";
 import { site } from "@/lib/data";
 
-/* Teljes szélességű órafoglalás sáv – a kép cserélhető, ha elkészül
-   a jógázó alakokkal újragenerált látványterv. */
+/* Teljes szélességű órafoglalás sáv – alapból a LÓTUSZ terem fotója,
+   a kép propon keresztül bármikor cserélhető. */
 export default function BookingBand({
-  image = "/studio/jogaterem.jpg",
-  imageAlt = "A MEDITA Jóga jógaterme",
+  image = "/studio/nagyterem.webp",
+  imageAlt = "A MEDITA Jóga LÓTUSZ jógaterme",
 }: {
   image?: string;
   imageAlt?: string;

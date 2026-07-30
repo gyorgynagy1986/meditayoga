@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import ArchPlaceholder from "@/components/ArchPlaceholder";
+import InstructorPortrait from "@/components/InstructorPortrait";
 import Reveal from "@/components/Reveal";
 import { instructors, site } from "@/lib/data";
 
@@ -33,7 +33,12 @@ export default function OktatokPage() {
             <Link href={`/oktatok/${i.slug}`} className="group">
               <article>
                 <div className="transition-transform duration-500 group-hover:-translate-y-1.5">
-                  <ArchPlaceholder initial={i.name.charAt(0)} className="aspect-[3/4] w-full" />
+                  <InstructorPortrait
+                    name={i.name}
+                    photo={i.photo}
+                    className="aspect-[3/4] w-full"
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  />
                 </div>
                 <div className="px-1 pt-6 text-center">
                   <h2 className="font-serif text-3xl text-ink-900 transition-colors group-hover:text-mint-700">

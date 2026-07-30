@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import ArchPlaceholder from "@/components/ArchPlaceholder";
-import { site } from "@/lib/data";
+import InstructorPortrait from "@/components/InstructorPortrait";
+import { instructors, site } from "@/lib/data";
+
+const edit = instructors.find((i) => i.slug === "edit");
 
 export const metadata: Metadata = {
   title: "Rólunk",
@@ -25,7 +27,13 @@ export default function RolunkPage() {
         <div className="grid gap-12 md:grid-cols-[2fr_3fr] md:gap-16">
           <div>
             <div className="sticky top-28">
-              <ArchPlaceholder initial="E" className="aspect-[3/4] w-full max-w-sm" />
+              <InstructorPortrait
+                name="Edit"
+                photo={edit?.photo}
+                className="aspect-[3/4] w-full max-w-sm"
+                sizes="(min-width: 768px) 384px, 100vw"
+                priority
+              />
               <p className="mt-5 font-serif text-2xl text-ink-900">Bozóné Simon Edit</p>
               <p className="mt-1 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-taupe-400">
                 alapító · jógaoktató

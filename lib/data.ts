@@ -34,6 +34,8 @@ export type Instructor = {
   role: string;
   classes: string[];
   bio: string;
+  /** Portréfotó a public/oktatok mappából. Ha nincs, monogramos helykitöltő jelenik meg. */
+  photo?: string;
   /** Részletes bemutatkozás – bekezdésenként, az oktatók saját szövegei. */
   story: string[];
 };
@@ -47,6 +49,7 @@ export const instructors: Instructor[] = [
     role: "alapító · jóga- és reformer pilates oktató",
     classes: ["Relax jóga", "Napindító jóga", "Reformer pilates", "Női meditáció"],
     bio: "A MEDITA Jóga alapítója. Hatha, női és yin jógaoktató, reformer pilates oktató, női meditációvezető.",
+    photo: "/oktatok/edit.webp",
     story: [
       "Bozóné Simon Edit vagyok, 46 éves. A mozgás és a sport mindig is része volt az életemnek. Bár sosem versenyszerűen vagy kiemelkedő szinten sportoltam, mégis folyamatosan jelen volt a mindennapjaimban. Kipróbáltam több mozgásformát is, mint a tánc, a futás, az aerobic és a tenisz, melyek mind hozzájárultak ahhoz, hogy a testmozgás természetes igénnyé váljon számomra.",
       "A jógával körülbelül 10 évvel ezelőtt találkoztam először. Kezdetben nem gondoltam, hogy ez az én utam lesz, mivel meglehetősen kötött és merev izomzattal rendelkezem. Ennek ellenére azonnal magával ragadott az ászanák szépsége, a gyakorlók testtudatossága, valamint a légzésfigyelés, a relaxáció és a meditáció nyugtató, befelé fordító világa.",
@@ -192,22 +195,22 @@ export const priceGroups = [
 
 export const priceNote = "Áraink 2026. augusztus 1-jétől visszavonásig érvényesek.";
 
-/* A stúdió terei. A képek a kész stúdió fotóira cserélendők. */
+/* A stúdió terei – valódi stúdiófotókkal (public/studio, eredetik: studio/original). */
 export const studioSpaces = [
   {
     name: "LÓTUSZ · Nagy terem",
     desc: "60 m²-es tágas, világos tér 20 fő befogadására. Zsályazöld és bézs prémium jógamatracokkal, len párnákkal, jóga- és pilates eszközökkel, tükrökkel.",
-    image: "/studio/jogaterem.jpg",
+    image: "/studio/nagyterem.webp",
   },
   {
     name: "BLOOM · Kis terem",
     desc: "15 m²-es hangulatos reformer terem 2 db ALIGN géppel és kiegészítőkkel, tükrökkel – a precíz, egyénre szabott reformer pilates gyakorláshoz.",
-    image: "/studio/reformer.jpg",
+    image: "/studio/kisterem.webp",
   },
   {
     name: "Recepció",
     desc: "Érkezz meg és lassulj le, egy tea vagy limonádé mellett.",
-    image: "/studio/recepcio.jpg",
+    image: "/studio/recepcio-detail.webp",
   },
 ];
 

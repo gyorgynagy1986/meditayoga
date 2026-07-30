@@ -75,9 +75,7 @@ export default function StudioPage() {
             </div>
           ))}
         </div>
-        <p className="mt-16 text-center text-xs tracking-wide text-taupe-400">
-          A képek látványtervek – a kész stúdió fotói a nyitás után kerülnek fel.
-        </p>
+       
       </section>
 
       {/* CTA */}

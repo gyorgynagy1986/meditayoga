@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import ArchPlaceholder from "@/components/ArchPlaceholder";
+import InstructorPortrait from "@/components/InstructorPortrait";
 import { instructors, site } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -48,9 +48,12 @@ export default async function InstructorPage({
         <div className="mt-10 grid gap-12 md:grid-cols-[2fr_3fr] md:gap-20">
           <div>
             <div className="sticky top-28">
-              <ArchPlaceholder
-                initial={instructor.name.charAt(0)}
+              <InstructorPortrait
+                name={instructor.name}
+                photo={instructor.photo}
                 className="aspect-[3/4] w-full max-w-sm"
+                sizes="(min-width: 768px) 384px, 100vw"
+                priority
               />
             </div>
           </div>

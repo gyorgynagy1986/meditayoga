@@ -12,7 +12,7 @@ export default function StudioShowcase() {
     <section className="relative overflow-hidden py-24 md:py-32">
       {/* Nagyon halvány háttérkép, alul-felül homokszínbe úszva */}
       <Image
-        src="/studio/hatter.jpg"
+        src="/studio/nagyterem.webp"
         alt=""
         aria-hidden
         fill
