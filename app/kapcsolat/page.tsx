@@ -31,7 +31,7 @@ export default function KapcsolatPage() {
           <Reveal>
             <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2rem]">
               <Image
-                src="/studio/recepcio.jpg"
+                src="/studio/original/recepcio.webp"
                 alt="A MEDITA Jóga recepciója"
                 fill
                 sizes="(min-width: 768px) 40vw, 100vw"
@@ -81,78 +81,6 @@ export default function KapcsolatPage() {
                 </div>
               </li>
             </ul>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Üzenetküldés – középre igazítva */}
-      <section className="bg-sand-100 py-20 md:py-28">
-        <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">
-          <Reveal>
-            <p className="text-xs font-semibold tracking-[0.3em] uppercase text-mint-700">
-              Üzenetküldés
-            </p>
-            <h2 className="mt-3 font-serif text-3xl text-ink-900 sm:text-4xl">
-              Miben segíthetünk?
-            </h2>
-          </Reveal>
-          <Reveal delay={150}>
-            <form
-              className="mt-12 space-y-5 text-left"
-              action={`mailto:${site.email}`}
-              method="post"
-              encType="text/plain"
-            >
-              <div className="grid gap-5 sm:grid-cols-2">
-                <div>
-                  <label htmlFor="name" className="mb-1.5 block text-xs font-semibold uppercase tracking-[0.15em] text-taupe-500">
-                    Név
-                  </label>
-                  <input
-                    id="name"
-                    name="nev"
-                    type="text"
-                    required
-                    className="w-full rounded-2xl border border-sand-300 bg-white px-5 py-3.5 text-sm outline-none transition-colors focus:border-mint-500"
-                    placeholder="A neved"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="mb-1.5 block text-xs font-semibold uppercase tracking-[0.15em] text-taupe-500">
-                    E-mail
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    className="w-full rounded-2xl border border-sand-300 bg-white px-5 py-3.5 text-sm outline-none transition-colors focus:border-mint-500"
-                    placeholder="pl. te@email.hu"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="message" className="mb-1.5 block text-xs font-semibold uppercase tracking-[0.15em] text-taupe-500">
-                  Üzenet
-                </label>
-                <textarea
-                  id="message"
-                  name="uzenet"
-                  rows={6}
-                  required
-                  className="w-full resize-y rounded-2xl border border-sand-300 bg-white px-5 py-3.5 text-sm outline-none transition-colors focus:border-mint-500"
-                  placeholder="Írd le, miben segíthetünk…"
-                />
-              </div>
-              <div className="pt-2 text-center">
-                <button
-                  type="submit"
-                  className="rounded-full bg-ink-900 px-12 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-sand-50 transition-colors hover:bg-ink-700"
-                >
-                  Üzenet küldése
-                </button>
-              </div>
-            </form>
           </Reveal>
         </div>
       </section>
